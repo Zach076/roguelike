@@ -1,0 +1,47 @@
+[gd_scene format=3 uid="uid://cg8i2pknrp0ll"]
+
+[ext_resource type="Texture2D" uid="uid://7xtl5o85nhey" path="res://icon.svg" id="1_0cyf1"]
+[ext_resource type="Script" uid="uid://wu6u5v7m7vi1" path="res://character.gd" id="2_script"]
+[ext_resource type="PackedScene" path="res://mob.tscn" id="3_mob"]
+[ext_resource type="Script" uid="uid://c2wqfh2ju4mv8" path="res://playfield.gd" id="4_playfield"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_bvnae"]
+
+[node name="Playfield" type="Node2D" unique_id=1479845736]
+script = ExtResource("4_playfield")
+
+[node name="Control" type="Control" parent="." unique_id=1676207039]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Background" type="ColorRect" parent="Control" unique_id=1479845737]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="CharacterBody2D" type="CharacterBody2D" parent="." unique_id=714401092]
+script = ExtResource("2_script")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D" unique_id=886291350]
+shape = SubResource("CircleShape2D_bvnae")
+
+[node name="Sprite2D" type="Sprite2D" parent="CharacterBody2D" unique_id=1997009915]
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("1_0cyf1")
+
+[node name="MobNorth" parent="." unique_id=1693198555 instance=ExtResource("3_mob")]
+position = Vector2(0, -300)
+
+[node name="MobSouth" parent="." unique_id=1569214627 instance=ExtResource("3_mob")]
+position = Vector2(0, 300)
+
+[node name="MobEast" parent="." unique_id=497081279 instance=ExtResource("3_mob")]
+position = Vector2(300, 0)
+
+[node name="MobWest" parent="." unique_id=1457479520 instance=ExtResource("3_mob")]
+position = Vector2(-300, 0)
