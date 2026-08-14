@@ -1,0 +1,9 @@
+78098b89c88a74ebe8c20117b8754620
+::res://::1786670086
+character.gd::GDScript::1587361667384415230::1786595956::0::1::::<>CharacterBody2D<><>0<>0<><>::
+icon.svg::CompressedTexture2D::2294698550223672228::1786595392::1786598223::1::::<><><>0<>0<>80c4ad7afbe67b0fe399e4279b333421<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
+mob.gd::GDScript::8119577479966044916::1786596687::0::1::::<>CharacterBody2D<><>0<>0<><>::
+mob.tscn::PackedScene::-1::1786596848::0::1::::<><><>0<>0<><>::uid://dnxgiwtbw7yrs::::res://mob.gd<>uid://7xtl5o85nhey::::res://icon.svg
+playfield.gd::GDScript::6714337266866149667::1786596963::0::1::::<>Node2D<><>0<>0<><>::
+playfield.tscn::PackedScene::5262633651388226317::1786597676::0::1::::<><><>0<>0<><>::uid://7xtl5o85nhey::::res://icon.svg<>uid://wu6u5v7m7vi1::::res://character.gd<>res://mob.tscn<>uid://c2wqfh2ju4mv8::::res://playfield.gd
+README.md::TextFile::-1::1786598012::0::1::::<><><>0<>0<><>::
