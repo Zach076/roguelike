@@ -1,6 +1,7 @@
 extends CharacterBody2D
 
-@export var speed: float = 150.0
+@export var speed: float = 100.0
+@export var health: int = 10
 
 @onready var player: CharacterBody2D = get_node("../CharacterBody2D")
 
