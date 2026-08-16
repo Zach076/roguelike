@@ -1,7 +1,5 @@
 # ignore godot engine caches and stuff
-.godot/shader_cache/*
-.godot/editor/*
-.godot/imported/*
+.godot/
 
 # ignore static assets
 *.svg
